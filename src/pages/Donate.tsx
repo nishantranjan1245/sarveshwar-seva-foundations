@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import heroDonateImage from "@/assets/donate/hero-donate.jpg";
 import whySupportImage from "@/assets/donate/why-support-1.png";
 import contributeImage from "@/assets/donate/contribute.jpg";
-import otherSupportImage from "@/assets/donate/other-support.jpg";
+import otherSupportImage from "@/assets/donate/other-support-1.png";
 
 const Donate = () => {
   useEffect(() => {
