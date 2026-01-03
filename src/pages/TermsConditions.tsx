@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { FileText, Globe, Shield, Users, Heart, Link, AlertTriangle, Scale, RefreshCw, Gavel, Phone, CheckCircle, ArrowRight, Mail, MapPin } from "lucide-react";
@@ -7,6 +8,9 @@ import donations from "@/assets/terms/donations.jpg";
 import contactSupport from "@/assets/terms/contact-support.jpg";
 
 const TermsConditions = () => {
+  useEffect(() => {
+    document.title = "Terms & Conditions | Sarveshwar Seva Foundation";
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Header />

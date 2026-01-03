@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -11,6 +12,9 @@ import contentSupport from "@/assets/volunteer/content-support.jpg";
 import eventAssistance from "@/assets/volunteer/event-assistance.jpg";
 
 const Volunteer = () => {
+  useEffect(() => {
+    document.title = "Volunteer | Sarveshwar Seva Foundation";
+  }, []);
   const volunteerAreas = [
     {
       icon: Megaphone,

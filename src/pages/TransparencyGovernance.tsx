@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Eye, Users, FileText, Shield, BarChart3, Heart, CheckCircle, Scale, Globe, Mail, MapPin, Sparkles, ArrowRight, Award } from "lucide-react";
@@ -5,12 +6,15 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 import heroTransparency from "@/assets/transparency/hero-transparency.jpg";
-import governanceBoard from "@/assets/transparency/governance-board.jpg";
+import governanceBoard from "@/assets/transparency/transparency-governance-board-1.png";
 import financialTransparency from "@/assets/transparency/financial-transparency.jpg";
 import ethicalStandards from "@/assets/transparency/ethical-standards.jpg";
-import stakeholderEngagement from "@/assets/transparency/stakeholder-engagement.jpg";
+import stakeholderEngagement from "@/assets/transparency/trasparency-stakeholer-engagement- img.png";
 
 const TransparencyGovernance = () => {
+  useEffect(() => {
+    document.title = "Transparency & Governance | Sarveshwar Seva Foundation";
+  }, []);
   const boardMembers = [
     "Bajrang Lal Bagra",
     "Deepak Sodhani",

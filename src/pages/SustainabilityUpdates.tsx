@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -9,6 +10,9 @@ import communityImage from "@/assets/sustainability/community-engagement.jpg";
 import announcementsImage from "@/assets/sustainability/announcements.jpg";
 
 const SustainabilityUpdates = () => {
+  useEffect(() => {
+    document.title = "Sustainability Updates | Sarveshwar Seva Foundation";
+  }, []);
   const updateTypes = [
     {
       icon: Megaphone,

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Link } from "react-router-dom";
@@ -9,15 +10,18 @@ import {
 } from "lucide-react";
 
 // Import images
-import climateAwarenessImg from "@/assets/initiatives/climate-awareness.jpg";
+import climateAwarenessImg from "@/assets/initiatives/climate-awareness -1.png";
 import greenLivingImg from "@/assets/initiatives/green-living.jpg";
-import communitySustainabilityImg from "@/assets/initiatives/community-sustainability.jpg";
+import communitySustainabilityImg from "@/assets/initiatives/community-sustainabiliy-1.png";
 import publicEngagementImg from "@/assets/initiatives/public-engagement.jpg";
-import volunteerParticipationImg from "@/assets/initiatives/volunteer-participation.jpg";
+import volunteerParticipationImg from "@/assets/initiatives/volunteer-participation-1.png";
 import environmentalImpactImg from "@/assets/initiatives/environmental-impact.jpg";
 import heroInitiativesImg from "@/assets/initiatives/hero-initiatives.jpg";
 
 const Initiatives = () => {
+  useEffect(() => {
+    document.title = "Initiatives | Sarveshwar Seva Foundation";
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Header />

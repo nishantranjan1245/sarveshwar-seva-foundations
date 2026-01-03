@@ -27,9 +27,11 @@ const Footer = () => {
                 <span className="font-display text-lg font-bold leading-tight block bg-gradient-to-r from-orange-400 via-amber-400 via-emerald-400 via-teal-400 to-blue-400 bg-clip-text text-transparent group-hover:from-orange-300 group-hover:via-amber-300 group-hover:via-emerald-300 group-hover:via-teal-300 group-hover:to-blue-300 transition-all duration-300">
                   Sarveshwar Seva
                 </span>
-                <span className="text-xs text-amber-300 font-bold tracking-widest">
-                  FOUNDATION
-                </span>
+                <span className="block text-center font-sans text-[12px] sm:text-[13px] 
+uppercase tracking-[0.32em] text-white/70 leading-tight mt-1">
+  <b>Foundation</b>
+</span>
+
               </div>
             </Link>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-6 max-w-sm">

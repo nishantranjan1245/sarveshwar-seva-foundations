@@ -1,14 +1,18 @@
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, FileCheck, Leaf, HandHeart, Globe, Users, CheckCircle, Sparkles, CreditCard, Building2, MessageCircle, AlertCircle, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroDonateImage from "@/assets/donate/hero-donate.jpg";
-import whySupportImage from "@/assets/donate/why-support.jpg";
+import whySupportImage from "@/assets/donate/why-support-1.png";
 import contributeImage from "@/assets/donate/contribute.jpg";
 import otherSupportImage from "@/assets/donate/other-support.jpg";
 
 const Donate = () => {
+  useEffect(() => {
+    document.title = "Donate | Sarveshwar Seva Foundation";
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Header />

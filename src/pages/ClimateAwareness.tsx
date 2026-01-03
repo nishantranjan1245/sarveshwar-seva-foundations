@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -9,6 +10,9 @@ import communityImage from "@/assets/climate/community-environment.jpg";
 import awarenessImage from "@/assets/climate/environmental-awareness.jpg";
 
 const ClimateAwareness = () => {
+  useEffect(() => {
+    document.title = "Climate Awareness | Sarveshwar Seva Foundation";
+  }, []);
   const articleCategories = [
     {
       icon: Globe,

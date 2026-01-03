@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Shield, Lock, Eye, FileText, Users, Globe, Cookie, Link2, Baby, Edit, Mail, MapPin, Sparkles, CheckCircle } from "lucide-react";
@@ -7,6 +8,9 @@ import dataSecurity from "@/assets/privacy/data-security.jpg";
 import contactSupport from "@/assets/privacy/contact-support.jpg";
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    document.title = "Privacy Policy | Sarveshwar Seva Foundation";
+  }, []);
   const sections = [
     {
       number: "1",

@@ -34,9 +34,10 @@ const Header = () => {
               <span className="font-display text-base sm:text-lg font-bold leading-tight block bg-gradient-to-r from-orange-500 via-amber-500 via-emerald-500 via-teal-500 to-blue-500 bg-clip-text text-transparent group-hover:from-orange-400 group-hover:via-amber-400 group-hover:via-emerald-400 group-hover:via-teal-400 group-hover:to-blue-400 transition-all duration-300">
                 Sarveshwar Seva
               </span>
-              <span className="text-[10px] sm:text-xs text-amber-600 dark:text-amber-400 font-bold tracking-widest">
-                FOUNDATION
-              </span>
+              <span className="block text-center font-sans text-[12px] sm:text-[13px] 
+uppercase tracking-[0.35em] text-muted-foreground leading-none mt-1">
+  <b>Foundation</b>
+</span>
             </div>
           </Link>
 
@@ -46,9 +47,9 @@ const Header = () => {
               <Link
                 key={link.name}
                 to={link.href}
-                className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
+                className={`relative px-4 py-2 rounded-xl text-base font-semibold transition-all duration-300 ${
                   location.pathname === link.href
-                    ? "bg-primary/10 text-primary"
+                    ? "bg-primary/10 text-primary font-bold"
                     : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
                 }`}
               >

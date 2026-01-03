@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { AlertTriangle, Info, Shield, Globe, Link, Users, RefreshCw, Mail, MapPin, FileText, CheckCircle, XCircle, Sparkles, ArrowRight } from "lucide-react";
@@ -5,11 +6,14 @@ import { Button } from "@/components/ui/button";
 import { Link as RouterLink } from "react-router-dom";
 
 import heroDisclaimer from "@/assets/disclaimer/hero-disclaimer.jpg";
-import informationPurpose from "@/assets/disclaimer/information-purpose.jpg";
+import informationPurpose from "@/assets/disclaimer/information-purpose-1.png";
 import voluntaryParticipation from "@/assets/disclaimer/voluntary-participation.jpg";
 import contactDisclaimer from "@/assets/disclaimer/contact-disclaimer.jpg";
 
 const Disclaimer = () => {
+  useEffect(() => {
+    document.title = "Disclaimer | Sarveshwar Seva Foundation";
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Header />

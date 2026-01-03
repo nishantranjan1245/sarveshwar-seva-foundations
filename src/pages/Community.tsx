@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -11,6 +12,9 @@ import greenInitiatives from "@/assets/community/green-initiatives.jpg";
 import collaboration from "@/assets/community/collaboration.jpg";
 
 const Community = () => {
+  useEffect(() => {
+    document.title = "Community | Sarveshwar Seva Foundation";
+  }, []);
   const whyMatters = [
     { icon: TreePine, text: "Build awareness at a local level", gradient: "from-coral to-gold" },
     { icon: Heart, text: "Encourage shared responsibility for environmental care", gradient: "from-rose to-purple" },

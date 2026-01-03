@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -9,6 +10,9 @@ import conservationImage from "@/assets/green-living/conservation.jpg";
 import communityGreenImage from "@/assets/green-living/community-green.jpg";
 
 const GreenLiving = () => {
+  useEffect(() => {
+    document.title = "Green Living | Sarveshwar Seva Foundation";
+  }, []);
   const resourceCategories = [
     {
       icon: Leaf,

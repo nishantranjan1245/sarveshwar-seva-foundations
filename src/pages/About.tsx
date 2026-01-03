@@ -1,13 +1,17 @@
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Shield, FileCheck, Target, Eye, Heart, Leaf, Users, Globe, Mail, MapPin, CheckCircle, Award, Scale, Sparkles } from "lucide-react";
 import heroAboutImage from "@/assets/about/hero-about.jpg";
-import communityActionImage from "@/assets/about/community-action.jpg";
+import communityActionImage from "@/assets/about/community-action-1.png";
 import missionVisionImage from "@/assets/about/mission-vision.jpg";
 import governanceImage from "@/assets/about/governance.jpg";
 import commitmentImage from "@/assets/about/commitment.jpg";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About | Sarveshwar Seva Foundation";
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Header />

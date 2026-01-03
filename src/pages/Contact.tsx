@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -13,6 +14,9 @@ import transparencyImg from "@/assets/contact/transparency.jpg";
 import volunteeringImg from "@/assets/contact/volunteering.jpg";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact | Sarveshwar Seva Foundation";
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",

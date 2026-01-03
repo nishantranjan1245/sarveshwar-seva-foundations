@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Scale, Building, FileCheck, Shield, Award, BookOpen, Users, Globe, Mail, MapPin, Sparkles, ArrowRight, CheckCircle, XCircle } from "lucide-react";
@@ -6,11 +7,14 @@ import { Link } from "react-router-dom";
 
 import heroLegal from "@/assets/legal/hero-legal.jpg";
 import legalIdentity from "@/assets/legal/legal-identity.jpg";
-import governance from "@/assets/legal/governance.jpg";
+import governance from "@/assets/transparency/transparency-governance-board-1.png";
 import financialTransparency from "@/assets/legal/financial-transparency.jpg";
 import contactLegal from "@/assets/legal/contact-legal.jpg";
 
 const LegalCompliance = () => {
+  useEffect(() => {
+    document.title = "Legal & Compliance | Sarveshwar Seva Foundation";
+  }, []);
   const boardMembers = [
     "Bajrang Lal Bagra",
     "Deepak Sodhani",
